@@ -1,0 +1,144 @@
+    1  whoami
+    2  whoaim
+    3  whoami
+    4  echo "Hello World"
+    5  apropos -s1 время
+    6  date
+    7  cal
+    8  man cal
+    9  cal -3 02 2018
+   10  cal -3
+   11  history
+   12  clear
+   13  history
+   14  pwd
+   15  cd /
+   16  cd ..
+   17  pwd
+   18  ls
+   19  ls /var
+   20  cd ~
+   21  cd ..
+   22  ls 
+   23  pwd
+   24  cd ~
+   25  ls -l 
+   26  man ls
+   27  history
+   28  mkdir fruits
+   29  cd /
+   30  mkdir ~/animals
+   31  touch /tmp/temp
+   32  cd ~/fruits
+   33  touch apple banana 
+   34  touch pineaple lion
+   35  touch ../animals cat.txt dog.txt elephant.txt
+   36  touch /home/pavel/animals cat.txt dog.txt elephant.txt
+   37  touch --help
+   38  touch ~/animals cat.txt dog.txt elephant.txt
+   39  touch ~/animals/cat.txt
+   40  touch ~/animals/dog.txt elephant.txt
+   41  touch ~/animals/elephant.txt
+   42  ls --help
+   43  ls -l apple
+   44  ls b*
+   45  man ls
+   46  ls *a
+   47  ls *e
+   48  ls [bi]*
+   49  ls b* i*
+   50  ls[ba]*
+   51  ls [ba]*
+   52  ls *[ba]*
+   53  cp /etc/passwd ~
+   54  cat /etc/issue 
+   55  cp /ets/issue apple
+   56  cp /etc/issue apple
+   57  cat apple
+   58  mv lion ~/animals
+   59  mv pineaple pineapple
+   60  wc --help
+   61  wc -l /etc/passwd
+   62  cd ~
+   63  ln -s /etc/passwd passwd_link
+   64  man ln
+   65  ln bash_history history_hard
+   66  ln .bash_history history_hard
+   67  ls -l ~/.bash_history
+   68  rm history_hard
+   69  ls -l .bash_history
+   70  ls -l видео
+   71  ls -l Видео
+   72  ls -l animals
+   73  rm fruits/apple
+   74  mkdir rmme
+   75  rmdir rmme
+   76  rmdir fruits
+   77  man rmdir
+   78  rm -fr fruits
+   79  cat /etc/passwd /var/log/boot.log
+   80  cp /etc/init.d/ ~
+   81  cp -r /etc/init.d/ ~
+   82  rm -fr init.d
+   83  history
+   84  cat /etc/passwdd
+   85  cat /etc/passwd
+   86  cut -d: -f1 /etc/passwd
+   87  man cut
+   88  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+   89  man less
+   90  man cut
+   91  man column
+   92  man sort
+   93  cut -d: -f1 /etc/passwd | sort
+   94  cat /etc/passwd | column -t | less
+   95  cut -d: -f1,3 /etc/passwd | sort | column -t
+   96  grep :/bin/bash /etc/passwd | wc -l
+   97  man grep 
+   98  grep :/bin/bash /etc/passwd | cut
+   99  grep :/bin/bash /etc/passwd 
+  100  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  101  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | grep -A24
+  102  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -n25
+  103  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+  104  man top
+  105  top -b -n1 
+  106  top
+  107  man top
+  108  top | sort -k12
+  109  history
+  110  man top
+  111  man --help
+  112  man top
+  113  top -b -n1 |sort -k12
+  114  top -b -n1 | awk '{printf "%35s %s\n", $12, $6}'
+  115  man awk
+  116  top -b -n1 | awk '{printf "%35s %s\n", $12, $6}'
+  117  sort -k1 /etc/passwd | tr ":" " "
+  118  sort -k1 | awk -F: '{printf "%15s %s\n", $1, $7}'
+  119  sort -k1 /etc/passwd | awk -F: '{printf "%15s %s\n", $1, $7}'
+  120  git --version
+  121  cd /usr/share/doc/git-*
+  122  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  123  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  124  tr '[:lower:]' '[:upper:]' < user-manual.txt |  tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  125  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  126  man uniq
+  127  man fold
+  128  history
+  129  ping ya.ru
+  130  curl wttr.in
+  131  curl wttr.in/moscow
+  132  hostname -I
+  133  curl ifconfig.me
+  134  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  135  man wget
+  136  wget --help
+  137  cd ~
+  138  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  139  man less
+  140  cat README-ru.md | less
+  141  su
+  142  sudo id
+  143  cat /var/log/messages
+  144  history
