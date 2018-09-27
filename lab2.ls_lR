@@ -1,0 +1,6 @@
+итого 8
+-rw-rw-rw-. 1 pavel pavel 335 сен 27 22:24 lab2.ls_lR
+-rw-rw-rw-. 1 pavel pavel   0 сен 27 21:58 file2
+-rw-------. 1 pavel pavel   0 сен 27 21:54 file1
+-rw-r-----. 1 root  pavel   5 сен 27 20:20 file
+drw-rw-r--. 2 pavel pavel  22 сен 27 20:29 dir
