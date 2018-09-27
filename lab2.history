@@ -1,0 +1,52 @@
+    1  clear
+    2  cd ~
+    3  mkdir tese
+    4  mv tese test
+    5  cd test
+    6  touch file
+    7  ls -l
+    8  chmod ugo-rwx file
+    9  ls -l
+   10  echo "тест" > file
+   11  cat file
+   12  chmod u+w file
+   13  ls -l 
+   14  echo "test" > file 
+   15  cat file
+   16  chmod g+r file 
+   17  ll file
+   18  cat file
+   19  chmod u+r file
+   20  ls -l
+   21  cat file
+   22  mkdir dir
+   23  touch dir/new_file
+   24  echo "file2" > dir/new_file
+   25  ls dir
+   26  ls -l
+   27  chmod dir ugo-x
+   28  chmod ugo-x dir
+   29  ls -l
+   30  cat dir/new_file
+   31  rm dir/new_file
+   32  man chown
+   33  chown root file 
+   34  chown pavel:root file
+   35  chown root:root file
+   36  ls -l
+   37  umask
+   38  umask 0066
+   39  touch file1
+   40  ls -l
+   41  umask 
+   42  umask 0000
+   43  umask
+   44  touch file2
+   45  ls -l
+   46  history
+   47  su
+   48  cat file
+   49  cd ~
+   50  touch lab2.ls_lR
+   51  touch lab2.history
+   52  history > lab2.history
