@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Аргументами являются числа 1, 2, 3"
+"$1" "1" "2" "3"
+echo ""
+echo "Аргументами являются пять случайных чисел"
+"$1" "$RANDOM" "$RANDOM" "$RANDOM" "$RANDOM" "$RANDOM"
+echo ""
+echo "Аргументами являются "foo", "bar", "foobar", "foo bar""
+"$1" "foo" "bar" "foobar" "foo bar"
+echo ""
+echo "Аргументами являются "foo" "--foo" "--help" "-l""
+"$1" "foo" "--foo" "--help" "-l"
