@@ -7,6 +7,7 @@
 Используя команду `find`:
 
 1. Найдите все файлы и каталоги, имя которых содержит слово `pass`, поиск начните с корневого каталога.
+
 find / -name "*pass*" 2>/dev/null 
 /run/systemd/ask-password
 /sys/fs/selinux/class/passwd
@@ -17,6 +18,7 @@ find / -name "*pass*" 2>/dev/null
 ...
 
 1. Найдите все файлы и каталоги, имя которых содержит слово `pass` без учёта регистра, поиск начните с корневого каталога.
+
 find / -iname "*pass*" 2>/dev/null 
 /run/systemd/ask-password
 /sys/fs/selinux/class/passwd
@@ -29,10 +31,12 @@ find / -iname "*pass*" 2>/dev/null
 
 
 1. Найдите все файлы и каталоги, имя которых содержит слово `pass`, ограничив глубину поиска одним каталогом, поиск начните с корневого каталога.
+
 find / -maxdepth 1 -name "*pass*" 2>/dev/null 
 ...
 
 1. Найдите все файлы и каталоги, имена которых оканчиваются на `.bin`. Поиск необходимо выполнить в каталоге `/home`.
+
 find /home -name "*.bin"  2>/dev/null
 /home/pavel/.gstreamer-0.10/registry.x86_64.bin
 /home/pavel/test.bin
