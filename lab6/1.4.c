@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
                         counter++;
                         if (counter == args_num) break;
                 }
-				if (args_num != counter) 
-				{
-					printf("Ошибка ввода: слишком большое число или введена не цифра\n");
-				}
+		if (args_num != counter) 
+		{
+			printf("Ошибка ввода: слишком большое число или введена не цифра\n");
+		}
 	}
 	else 
 	{
