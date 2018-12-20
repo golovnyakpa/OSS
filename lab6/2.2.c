@@ -7,11 +7,11 @@ int main(void)
     if (pid == 0) 
     {
 	sleep(5);
-	printf("Это сообщение из дочернего процесса.\n");
+	printf("Это дочерний процесс. Мой PID: %d\nPID моего родителя : %d\n\n ", getpid(), getppid());
     } else if (pid > 0) 
     {
 	sleep(10);
-	printf("Это сообщение из родительского процесса.\n");
+	printf("Это сообщение из родительского процесса. Мой PID: %d\n", getpid());
     }
     return 0;
 }
