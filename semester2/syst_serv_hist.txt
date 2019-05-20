@@ -1,0 +1,19 @@
+ 1 ps xaf
+ 2 ps xawf -eo pid,user,cgroup,args
+ 3 systemd-cgls
+ 4 ls -l /usr/lib/systemd/system/
+ 5 ls -l /run/systemd/system/
+ 6 ls -l /etc/systemd/system/
+ 7 systemctl -t help
+ 8 systemctl status
+ 9 systemctl --type=service
+ 10 systemctl status auditd.service
+ 11 systemctl is-active auditd.service
+ 12 systemctl is-enabled auditd.service
+ 13 systemctl list-dependencies --after auditd.service
+ 14 systemctl list-dependencies --before auditd.service 
+ 15 systemctl list-units --type=service
+ 16 systemctl list-units --type=service --all
+ 17 systemctl list-units --type=socket --all
+ 18 systemctl list-unit-files --type=service
+ 19 systemctl --failed --type=service
