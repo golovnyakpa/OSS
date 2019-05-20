@@ -1,0 +1,46 @@
+1 ps xaf
+ 2 ps xawf -eo pid,user,cgroup,args
+ 3 systemd-cgls
+ 4 ls -l /usr/lib/systemd/system/
+ 5 ls -l /run/systemd/system/
+ 6 ls -l /etc/systemd/system/
+ 7 systemctl -t help
+ 8 systemctl status
+ 9 systemctl --type=service
+ 10 systemctl status auditd.service
+ 11 systemctl is-active auditd.service
+ 12 systemctl is-enabled auditd.service
+ 13 systemctl list-dependencies --after auditd.service
+ 14 systemctl list-dependencies --before auditd.service 
+ 15 systemctl list-units --type=service
+ 16 systemctl list-units --type=service --all
+ 17 systemctl list-units --type=socket --all
+ 18 systemctl list-unit-files --type=service
+ 19 systemctl --failed --type=service
+ 
+ 1 su
+ 2 systemctl status httpd.service
+ 3 systemctl start httpd.service
+ 4 systemctl status httpd.service
+ 5 systemctl restart httpd.service
+ 6 systemctl status httpd.service
+ 7 systemctl stop httpd.service
+ 8 systemctl enable httpd.service
+ 9 systemctl disable httpd.service
+ 10 systemctl mask httpd.service
+ 11 systemctl unmask httpd.service
+ 12 systemctl list-units --type=target
+ 13 systemctl list-units --type=target --all
+ 14 systemctl get-default
+ 15 ls -l /etc/systemd/system/default.target
+ 16 systemctl set-default multi-user.target 
+ 17 systemctl isolate multi-user.target
+ 18 systemctl --no-wall rescue
+ 19 touch /etc/systemd/system/gedit.service
+ 20 chmod 664 /etc/systemd/system/gedit.service
+ 21 gedit /etc/systemd/system/gedit.service 
+ 22 systemctl daemon-reload
+ 23 systemctl start gedit.service 
+ 24 cp /etc/systemd/system/gedit.service ~/
+ 25 exit
+ 26 history >> history.txt
