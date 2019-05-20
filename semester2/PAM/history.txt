@@ -1,0 +1,110 @@
+1  man su
+2  man hostname
+3  su -c "hostname mephi"
+4  sudo gedit /etc/pam.d/su
+5  gedit /etc/pam.d/su
+6  sudo gedit /etc/pam.d/su
+7  usermod -aG wheel user1
+8  sudo usermod -aG wheel user1
+9  sudo useradd -mG wheel user1
+10  whoami
+11  su -user1
+12  su - user1
+13  su -u user1
+14  su - user1
+15  startx
+16  su - user1
+17  sudo passwd user1
+18  history
+19  ls
+20  su - user1
+21  su
+22  tcpdump -i en0
+23  man tcpdump
+24  history
+25  sudo gedit /etc/pam.d
+26  sudo cat /etc/pam.d
+27  cd /etc/pam.d
+28  ls
+29  ls -l /lib64/libpam*
+30  ls -l /lib64/security/
+31  ll /etc/security/
+32  sudo gedit /etc/pam.d/su
+33  sudo vi /etc/pam.d/su
+34  cat /lib64/security
+35  ll /lic64/security
+36  sudo ll /lib64/security
+37  sudo ls -l /lib64/security
+38  sudo cat /etc/pam.conf
+39  sudo ls -l  /etc/pam.conf
+40  sudo ls -l /etc | grep pam
+41  sudo cat su
+42  sudo cat /etc/login.defs
+43  sudo cat su
+44  ls
+45  sudo cat sudo
+46  cd ..
+47  ls
+48  ls | grep pam
+49  man pam_limits
+50  ll /etc/security
+51  find / -type f -name system-auth
+52  find / -type f -name system-auth 2> /dev/null
+53  sudo find / -type f -name system-auth
+54  cat /etc/pam.d/system-auth
+55  cd ~
+56  touch check_user.c
+57  gedit check_user.c
+58  su
+59  gedit check_user.c
+60  ls
+61  cat lab3.txt 
+62  gedit lab3.txt 
+63  ps -e | grep gedit
+64  ls /etc/systemd/system/ | grep gedit
+65  gedit
+66  gnomesu gedit
+67  gksu gedit
+68  kdesu kate
+69  startx
+70  gedit
+71  vim check_user.c
+72  cat check_user.c 
+73  vim check_user.c
+74  ls
+75  gedit check_user.c
+76  su
+77  ./check_user userchi
+78  ./check_user tnorus
+79  su - root
+80  su - root
+81  ls
+82  ./check_user user1
+83  ./check_user root
+84  su - root
+85  ls
+86  ./check_user 
+87  ./check_user tnorus
+88  ./check_user tnorus user1
+89  ./check_user user1
+90  su - user1
+91  ls
+92  ./check_user user1
+93  ./check_user userchi
+94  su -
+95  ./check_user user1
+96  ./check_user userchi
+97  ./check_user tnorus
+98  ./check_user user1
+99  ./check_user userchi
+100  sudo ./check_user user1
+101  ls
+102  exit
+103  su
+104  gedit /etc/securetty 
+105  gedit /etc/pam.d/login
+106  man pam_pwquality
+107  vim /etc/security/pwquality.conf 
+108  man pam_limits
+109  gedit /etc/security/limits.conf 
+110  history >> history.txt
