@@ -1,0 +1,18 @@
+226  ls -l /dev/sda{,[123]}
+227  lsblk --list
+228  cat /proc/diskstats 
+229  cat /proc/devices 
+230  sudo dd if=/dev/zero of=./fs.img bs=1M count=10
+231  sudo losetup --find --show ./fs.img
+232  sudo losetup --list
+233  sudo mkfs -t ext4 /dev/loop0
+234  sudo blkid /dev/loop0
+235  sudo mount /dev/loop0 /mnt
+236  sudo mount | grep /mnt
+237  sudo df -h /mnt
+238  sudo df -hi /mnt
+239  sudo umount /dev/loop0
+240  sudo tune2fs -l /dev/loop0
+241  sudo losetup --detach /dev/loop0
+242  sudo losetup --list
+243  history > fslab.txt
